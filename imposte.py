@@ -8,7 +8,6 @@ SCAGLIONE_2 = 50000
 
 reddito = float(input("Inserisci il tuo reddito: "))
 tasse_da_scontare = 0.0
-reddito_netto = 0.0
 
 if reddito > SCAGLIONE_1:
     tasse_da_scontare += SCAGLIONE_1 * PRIMA_ALIQUOTA
