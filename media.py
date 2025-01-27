@@ -10,6 +10,6 @@ while True:
 
 if contatore > 0:
     media= somma/contatore
-    print("La tua media è:", media)
+    print("La tua media è %.2f" % media)
 else:
     print("Nessun numero inserito.")
