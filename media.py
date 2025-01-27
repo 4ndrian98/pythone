@@ -1,8 +1,8 @@
 somma=0
 contatore=0
 while True:
-    numero=float(input("Inscerisci un numero per fare la media (-1 per uscire dal programma): "))
-    if numero==-1:
+    numero=float(input("Inscerisci un numero per fare la media (per uscire dal programma digita un numero negativo): "))
+    if numero<0:
         break
     else:
         somma += numero
