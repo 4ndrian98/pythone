@@ -27,5 +27,3 @@ print("Le tasse da pagare sono:", tasse_da_scontare, "€")
 
 reddito_netto = reddito - tasse_da_scontare
 print("Il tuo reddito al netto delle tasse è:", reddito_netto, "€")
-return reddito_netto
-
