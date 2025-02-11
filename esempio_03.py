@@ -20,7 +20,7 @@ while game:
     if Punteggio_B >40:
         Punteggio_B = 40
         x2= scambi 
-    print("Scambio",scambi, "vinto dal Giocatore",vincitore,"Ecco il punteggio: Giocatore1",Punteggio_A,"-",Punteggio_B,"Giocatore2",x, x2)
+    print("Scambio",scambi, "vinto dal Giocatore",vincitore,"Ecco il punteggio: Giocatore1",Punteggio_A,"-",Punteggio_B,"Giocatore2")
     if (scambi > x+1 and Punteggio_A == 40 and vincitore == 1 and vincitore == vincitore_scambio_passato) or ( scambi > x+1 and Punteggio_B == 40 and vincitore == 2 and vincitore == vincitore_scambio_passato):
         game=False
     vincitore_scambio_passato= vincitore
