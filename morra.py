@@ -55,8 +55,8 @@ while True:
         punteggio_giocatore1+=1
         print("Ha vinto il Giocatore 1!", punteggio_giocatore1, "-", punteggio_giocatore2)
     if punteggio_giocatore1 > punteggio_giocatore2+2:
-        print("Ha vinto il Giocatore 2", punteggio_giocatore1, "-", punteggio_giocatore2)
+        print(f"Hai giocato: {partite} partite, ha vinto il Giocatore 2 {punteggio_giocatore1} - {punteggio_giocatore2}")
         break
     elif punteggio_giocatore2 > punteggio_giocatore1+2:
-        print("Ha vinto il Giocatore 1", punteggio_giocatore1, "-", punteggio_giocatore2)
+        print(f"Hai giocato: {partite} partite, ha vinto il Giocatore 1 {punteggio_giocatore1} - {punteggio_giocatore2}")
         break
