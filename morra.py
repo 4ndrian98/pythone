@@ -14,7 +14,7 @@ while True:
         continue
 
     #Giocate C:
-    if Lettera_giocatore1 == Lettera_giocatore2:
+    if Lettera_giocatore1 == "C" and Lettera_giocatore2 == "C":
         print("Pareggio!")
         partite+=1
     elif Lettera_giocatore1 == "C" and Lettera_giocatore2 == "S":
@@ -29,7 +29,7 @@ while True:
         
         
     #Giocate S:    
-    if Lettera_giocatore1 == Lettera_giocatore2:
+    if Lettera_giocatore1 == "S" and Lettera_giocatore2 == "S":
         print("Pareggio!")
         partite+=1
     elif Lettera_giocatore1 == "S" and Lettera_giocatore2 == "F":
@@ -42,7 +42,7 @@ while True:
         print("Ha vinto il Giocatore 2!", punteggio_giocatore1, "-", punteggio_giocatore2)
     
     #Giocate F:
-    if Lettera_giocatore1 == Lettera_giocatore2:
+    if Lettera_giocatore1 == "F" and Lettera_giocatore2 == "F":
         print("Pareggio!")
         partite+=1
     elif Lettera_giocatore1 == "F" and Lettera_giocatore2 == "S":  
