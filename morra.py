@@ -2,7 +2,6 @@ punteggio_giocatore1=0
 punteggio_giocatore2=0
 GIOCATE= ["C", "S", "F"]
 partite=0
-
 while True:
     print("Gioca a morra cinese, inserisci due lettere: C(per carta), S(per Sasso), F(per forbici):")
     Lettera_giocatore1= input("Prima lettera: ").upper()
@@ -15,7 +14,7 @@ while True:
         continue
 
     #Giocate C:
-    if Lettera_giocatore1 == "C" and Lettera_giocatore2 == "C":
+    if Lettera_giocatore1 == Lettera_giocatore2:
         print("Pareggio!")
         partite+=1
     elif Lettera_giocatore1 == "C" and Lettera_giocatore2 == "S":
@@ -30,7 +29,7 @@ while True:
         
         
     #Giocate S:    
-    if Lettera_giocatore1 == "S" and Lettera_giocatore2 == "S":
+    if Lettera_giocatore1 == Lettera_giocatore2:
         print("Pareggio!")
         partite+=1
     elif Lettera_giocatore1 == "S" and Lettera_giocatore2 == "F":
@@ -43,7 +42,7 @@ while True:
         print("Ha vinto il Giocatore 2!", punteggio_giocatore1, "-", punteggio_giocatore2)
     
     #Giocate F:
-    if Lettera_giocatore1 == "F" and Lettera_giocatore2 == "F":
+    if Lettera_giocatore1 == Lettera_giocatore2:
         print("Pareggio!")
         partite+=1
     elif Lettera_giocatore1 == "F" and Lettera_giocatore2 == "S":  
@@ -60,3 +59,4 @@ while True:
     elif punteggio_giocatore2 > punteggio_giocatore1+2:
         print(f"Hai giocato: {partite} partite, ha vinto il Giocatore 2 {punteggio_giocatore1} - {punteggio_giocatore2}")
         break
+
