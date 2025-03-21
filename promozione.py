@@ -1,15 +1,15 @@
 class Cliente:
     def __init__(self, nome):
         self._nome = nome
-        self._spesa_dal_sconto_ultimo = 0.0  # Contatore di spesa
-        self._sconto_disponibile = 0.0        # Sconto disponibile
-        self._totale_pagato = 0.0             # Totale effettivo pagato
+        self._spesa_dal_sconto_ultimo = 0.0  
+        self._sconto_disponibile = 0.0        
+        self._totale_pagato = 0.0             
 
     def effetuaAcquisto(self, ammontare):
         importo_originale = ammontare
-        applicato = 0  # Inizializzazione
+        applicato = 0  
         
-        # Applica il sconto disponibile (se presente)
+        # Applica il sconto disponibile 
         if self._sconto_disponibile > 0:
             applicato = min(self._sconto_disponibile, importo_originale)
             self._sconto_disponibile -= applicato
@@ -18,11 +18,11 @@ class Cliente:
         # Aggiorna il contatore di spesa
         self._spesa_dal_sconto_ultimo += ammontare
         
-        # Genera un nuovo sconto per la transazione successiva (se necessario)
+        
         if self._spesa_dal_sconto_ultimo >= 100:
             self._sconto_disponibile += 10  # Aggiunge 10€ di sconto
-            # Resetta il contatore a 0 invece di usare modulo
-            self._spesa_dal_sconto_ultimo = 0  # Reset completo
+            # Resetta il contatore a 0 
+            self._spesa_dal_sconto_ultimo = 0  
         
         # Aggiorna il totale pagato
         self._totale_pagato += ammontare
